@@ -1,0 +1,48 @@
+# Requirements para el proyecto ctg_viz
+# Práctica 3 - Arellano Ortiz Andre
+
+# ==================== DEPENDENCIAS PRINCIPALES ====================
+# Análisis de datos
+pandas>=1.3.0
+numpy>=1.21.0
+
+# Visualización
+altair>=4.2.0
+plotly>=5.0.0
+seaborn>=0.11.0
+matplotlib>=3.4.0
+
+# Aplicación web interactiva
+streamlit>=1.0.0
+
+# Generación de reportes PDF
+reportlab>=4.0.0
+
+# ==================== DEPENDENCIAS DE DESARROLLO ====================
+# Testing
+pytest>=7.0.0
+pytest-cov>=3.0.0
+
+# Notebooks
+jupyter>=1.0.0
+notebook>=6.4.0
+
+# ==================== DEPENDENCIAS IMPLÍCITAS ====================
+# Estas se instalan automáticamente con las anteriores, pero se listan
+# para referencia y control de versiones
+
+# Para Altair
+# vega_datasets
+# jsonschema
+
+# Para Plotly
+# tenacity
+
+# Para Streamlit
+# click
+# tornado
+# watchdog
+
+# Para Jupyter
+# ipykernel
+# ipywidgets
