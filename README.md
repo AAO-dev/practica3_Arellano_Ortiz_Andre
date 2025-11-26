@@ -76,19 +76,19 @@ cd practica3_Arellano_Ortiz_Andre
 
 **Opción A: Usando requirements.txt (Recomendado)**
 ```bash
-python -m install -r requirements.txt
+python -m pip install -r requirements.txt
 ```
 
 **Opción B: Instalación del paquete**
 
 Para uso básico:
 ```bash
-python -m install -e .
+python -m pip install -e .
 ```
 
 Para desarrollo (incluye pytest, jupyter, etc.):
 ```bash
-python -m install -e ".[dev]"
+python -m pip install -e ".[dev]"
 ```
 
 ### 3. Ejecutar la Aplicación Streamlit
