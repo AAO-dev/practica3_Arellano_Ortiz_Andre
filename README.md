@@ -76,25 +76,25 @@ cd practica3_Arellano_Ortiz_Andre
 
 **Opción A: Usando requirements.txt (Recomendado)**
 ```bash
-pip install -r requirements.txt
+python -m install -r requirements.txt
 ```
 
 **Opción B: Instalación del paquete**
 
 Para uso básico:
 ```bash
-pip install -e .
+python -m install -e .
 ```
 
 Para desarrollo (incluye pytest, jupyter, etc.):
 ```bash
-pip install -e ".[dev]"
+python -m install -e ".[dev]"
 ```
 
 ### 3. Ejecutar la Aplicación Streamlit
 
 ```bash
-streamlit run app.py
+python -m streamlit run app.py
 ```
 
 Esto abrirá una interfaz web interactiva.
@@ -119,7 +119,7 @@ Este notebook contiene ejemplos de uso de todos los módulos y funciones disponi
 Para iniciar la aplicación interactiva, ejecute el siguiente comando en su terminal:
 
 ```bash
-streamlit run app.py
+python -m streamlit run app.py
 ```
 
 Esta acción abrirá una interfaz web que le permitirá cargar sus datos y explorar las visualizaciones de manera dinámica.
