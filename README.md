@@ -189,7 +189,7 @@ boxplot.show()
 - `plot_correlation_heatmap(df, variables)`: Mapa de calor generado con Altair.
 - `plot_bar_class_counts(df)`: Gráfico de barras generado con Plotly.
 - `plot_boxplot_astv_by_nsp(df)`: Diagrama de caja generado con Plotly.
-- `plot_violin_uc_by_nsp(df)`: Gráfico de violín generado con Altair.
+- `plot_boxplot_uc_by_nsp(df)`: Diagrama de caja generado con Plotly.
 - `plot_density_width_by_nsp(df)`: Gráfico de densidad generado con Altair.
 
 ## Pruebas
@@ -216,16 +216,10 @@ Consulte el cuaderno de demostración `demostracion.ipynb` para ver ejemplos com
 - seaborn >= 0.11.0
 - matplotlib >= 3.4.0
 - streamlit >= 1.0.0
-
-### Dependencias de Desarrollo (Opcionales)
-
-Para instalar las dependencias de desarrollo, utilice `pip install -e ".[dev]"`:
-
 - pytest >= 7.0.0
 - pytest-cov >= 3.0.0
 - jupyter >= 1.0.0
 - notebook >= 6.4.0
-
 
 ## Autor
 
