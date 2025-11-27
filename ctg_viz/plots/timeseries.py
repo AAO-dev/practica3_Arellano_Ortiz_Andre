@@ -16,9 +16,14 @@ def plot_line_lb_evolution(df: pd.DataFrame) -> plt.Figure:
     fig, ax = plt.subplots(figsize=(14, 5))
     # Use a subset of 200 data points for clarity
     subset = df.iloc[:200]
-    sns.lineplot(data=subset, x=subset.index, y='LB', linewidth=2, color='teal', ax=ax)
-    ax.set_title('Serie Temporal Simulada: Evolución de LB (Primeros 200 registros)', fontsize=15)
-    ax.set_xlabel('Índice de Tiempo (Simulado)')
-    ax.set_ylabel('LB')
-    ax.fill_between(subset.index, subset['LB'], alpha=0.2, color='teal')
+    
+    # Cambio de color a un esquema más vibrante: azul oscuro con relleno
+    sns.lineplot(data=subset, x=subset.index, y='LB', linewidth=2.5, color='#1f77b4', ax=ax)
+    ax.set_title('Serie Temporal: Evolución de Línea Base (LB) - Primeros 200 Registros', fontsize=16, fontweight='bold')
+    ax.set_xlabel('Índice Temporal', fontsize=12)
+    ax.set_ylabel('Línea Base (LB)', fontsize=12)
+    ax.fill_between(subset.index, subset['LB'], alpha=0.3, color='#1f77b4')
+    ax.grid(True, alpha=0.3, linestyle='--')
+    
+    plt.close(fig)
     return fig

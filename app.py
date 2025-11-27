@@ -9,7 +9,7 @@ from ctg_viz.plots import (
     plot_correlation_heatmap,
     plot_bar_class_counts,
     plot_boxplot_astv_by_nsp,
-    plot_violin_uc_by_nsp,
+    plot_boxplot_uc_by_nsp,
     plot_density_width_by_nsp
 )
 
@@ -75,14 +75,14 @@ def main():
             st.altair_chart(plot_histogram_lb_by_nsp(df_clean), use_container_width=True)
             
             st.markdown("### Densidad Width por NSP")
-            st.pyplot(plot_density_width_by_nsp(df_clean), use_container_width=True)
+            st.altair_chart(plot_density_width_by_nsp(df_clean), use_container_width=True)
 
         with col2:
             st.markdown("### Conteo de Clases (NSP)")
             st.plotly_chart(plot_bar_class_counts(df_clean), use_container_width=True)
             
-            st.markdown("### Violín UC por NSP")
-            st.pyplot(plot_violin_uc_by_nsp(df_clean), use_container_width=True)
+            st.markdown("### Boxplot UC por NSP")
+            st.altair_chart(plot_boxplot_uc_by_nsp(df_clean), use_container_width=True)
 
     with tab2:
         st.subheader("Relaciones entre Variables")
@@ -114,7 +114,7 @@ def main():
                 st.altair_chart(plot_correlation_heatmap(df_clean, selected_cols), use_container_width=True)
             
             st.markdown("### Violín con Swarm (LB por NSP)")
-            st.pyplot(plot_violin_with_swarm(df_clean), use_container_width=True)
+            st.plotly_chart(plot_violin_with_swarm(df_clean), use_container_width=True)
 
     with tab3:
         st.subheader("Análisis Temporal")
